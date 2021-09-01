@@ -1,0 +1,42 @@
+
+.producto-grilla-contenedor{
+    width: 30%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-right: 1.9rem;
+}
+
+.grilla-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.grilla-info{
+    width: 100%;
+    height: 20%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.grilla-price{
+    color: var(--main-color)
+}
+
+.linkgrilla{
+    width: 100%;
+    height: 80%;
+    background-color: red;
+}
+
+@media screen and (max-width: 1000px){
+    .producto-grilla-contenedor{
+        width: 42%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,92 @@
+
+
+.products-contenedor{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.products-content{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 90vh;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.products-area{
+    width: 80%;
+    min-height: 90vh;
+}
+
+.buttons-area{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2.2rem 0;
+}
+
+.activo{
+    color: white;
+    background-color: black;
+}
+
+.buttons-col1{
+    display: flex;
+}
+
+.vista-btn{
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    padding: 0.1rem;
+    border-radius: 2px;
+}
+
+.hr{
+    height: 1px;
+    background-color: grey;
+    width: 50%;
+    margin: 0.5rem 1rem;
+    
+}
+
+.sort{
+    margin-right: 10px;
+}
+
+.buttons-col2{
+    display: flex;
+}
+
+.listado-productos{
+    width: 100%;
+    min-height: 90vh;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.grilla{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+@media screen and (max-width: 1200px){
+    .products-content{
+        flex-direction: column;
+    }
+    .products-area{
+        width: 100%;
+    }
+    .listado-productos{
+        margin-top: 4rem;
+    }
+    .grilla{
+        justify-content: center;
+    }
+}

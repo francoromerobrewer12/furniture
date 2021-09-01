@@ -1,0 +1,40 @@
+
+
+.form-contenedor{
+    width: 80%;
+    margin: 0 auto;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-input{
+    border: 1px solid black
+}
+.form-tittle{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.form-text{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.input{
+    width: 300px;
+    height: 2rem;
+    border: none;
+    padding: 0 1rem;
+}
+
+.form-btn{
+    height: 2rem;
+    padding: 0 1rem;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+}

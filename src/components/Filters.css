@@ -1,0 +1,105 @@
+
+.filters-contenedor{
+    width: 20%;
+    min-height: auto;
+    padding: 2rem 0;
+}
+
+.filters-wrap{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: 2rem;
+}
+
+.filter-input{
+    height: 2rem;
+    padding-left: 0.5rem;
+}
+.categories, .company, .colors, .price{
+    margin-top: 1rem;
+}
+
+.companies{
+    height: 2rem;
+    width: 100px;
+}
+
+.colors{
+    display: flex;
+    flex-direction: column;
+}
+
+.colors-wrap{
+    display: flex;
+}
+
+.red, .brown, .grey, .black{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.red{
+    background-color: red;
+}
+.brown{
+    background-color: brown;
+}
+.grey{
+    background-color: grey;
+}
+.black{
+    background-color: black;
+}
+
+.active, .category:hover{
+    border-left: 5px solid var(--main-color);
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.price{
+    margin-bottom: 1rem;
+}
+
+.clear-filters-btn{
+    padding: 0.5rem;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px){
+    .filters-contenedor{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filters-wrap{
+        align-items: center
+    }
+
+    .filter-input{
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    .cols-wrap{
+        display: flex;
+    }
+    .col1{
+        margin-right: 150px;
+    }
+
+    .clear-filters-btn{
+        margin-top: 2rem;
+
+    }
+}

@@ -1,0 +1,23 @@
+
+
+.pagetittle-contenedor{
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(to right bottom, #ecd6cb, #eddad1, #edded8, #eee3de, #eee7e4);
+    display: flex;
+    align-items: center;
+}
+
+.pagetittle-tittle{
+    width: 80%;
+    margin: 0 auto;
+    color: var(--main-color)
+}
+
+.pagetittle-tittle span{
+    color: black
+}
+
+.link{
+    color: var(--main-color)
+}

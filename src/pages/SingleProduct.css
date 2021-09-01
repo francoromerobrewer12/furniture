@@ -1,0 +1,150 @@
+
+.singleproduct-contenedor{
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.singleproduct-content{
+    width: 80%;
+    margin: 0 auto;
+    min-height: 80vh;
+    overflow: hidden;
+}
+
+.buttonback{
+    margin: 2rem 0;
+}
+
+.backtoproducts{
+    background-color: var(--main-color);
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+.singleproduct-area{
+    display: flex;
+    height: 90vh;
+}
+
+.singleproduct-images{
+    height: 100%;
+    width: 50%;
+}
+
+.product-mainphoto{
+    width: 100%;
+    height: 70%;
+}
+
+.mainphoto{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.product-littlephotos{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 0;
+}
+
+.littlephoto{
+    width: 18%;
+    height: 70%;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+.singleproduct-info{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    line-height: 2rem;
+}
+
+.singleproduct-tittle{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.singleproduct-price{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.singleproduct-descripcion{
+    margin-bottom: 1rem;
+}
+
+.separator{
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-color);
+}
+
+.singleproduct-amounts{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.amount-btn{
+    cursor: pointer
+}
+
+.addtocart-btn{
+    background-color: var(--main-color);
+    border: none;
+    padding: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px){
+    .singleproduct-content{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .singleproduct-area{
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .singleproduct-images{
+        width: 60%;
+        
+    }
+    .singleproduct-info{
+        width: 100%;
+    }
+
+    .separator{
+        margin-top: 1rem;
+    }
+    .singleproduct-amounts{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .singleproduct-images{
+        width: 90%;
+    }
+}
