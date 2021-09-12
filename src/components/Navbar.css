@@ -81,7 +81,7 @@
 }
 
 @media screen and (max-width: 1000px){
-    .menu-list, .cart-section{
+    .menu-list, .cart{
         display: none;
     }
 
