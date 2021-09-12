@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+WELCOME TO THE FURNITURE ECOMMERCE!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The following project was built to learn about Context API and how I could use it to add some items to a cart and see a total price, such us in a normal ecommerce.
 
-## Available Scripts
+This website consists of five pages: Home, About, Products, Products Detail and Cart. To move from one to the other I used React Router.
 
-In the project directory, you can run:
+The first two pages were not a priority in this project and they just have some basic sections. 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#PRODUCTS PAGE
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This page is in charge of showing all the products of this store that can be find in an array of objects called products inside our data.js file.
+Every object has all the necesary information of each product and depending on how the user chooses to see them (grid or list), a specific component will render all this data.
 
-### `npm test`
+On the left side of the screen you can see an input that will check if the word typed by the user is included in any of the products.name property of our products array. If the input is empty all the products are shown.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Under this input you can find the rest of the filters that the user can use to find an specific product in our store. All of them store the value selected and filter the products array depending on their category, price and color properties. The color filter will not show products of that color but it correctly filters the objects or products which color property is equal to the one that the user picked. It was only a matter of not looking for furniture of that color and just learning how to filter arrays. The final button would reset the filters so all the products are shown again.
 
-### `npm run build`
+On the right side of the screen you can choose between the grid or list view of the products as well as knowing how many products were found after applying the filters. There is also some sort options that were included just to learn how to order arrays depending on their price or name.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The two components that will be in charge of the view of the products are ProductoGrilla and ProductoLista.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To finish with this page it is important to mention the deatils button that every product has. This button will take you to the Product Deails page of that object.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#PRODUCT DETAILS PAGE
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This page has a gallery of the pictures of the selected project on the left and the rest of its information on the right. It in this section in which you can add a product to the cart.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#CART PAGE
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The cart page uses the Context API. All the cart products are stored in an array in our state, as also the amount, total, subtotal and the methods to modify this values. All this functions dispatch an action to our reducer file who will update our state values.
 
-## Learn More
+If the cart products array is empty a mesage indicating this will be shown in the screen, if not, a section with every item name, price, quantity and subtotal will be displayed as well as a totals chart at the bottom of this section.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
